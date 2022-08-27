@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Bap Er Bank</title>
+  </head>
+  <body>
+    <h1 class="text-5xl text-center mt-12 text-red-500">
+      Welcome to <span>Bap Er Bank</span>
+    </h1>
+
+    <!-- Card Section -->
+    <section class="container mt-12">
+      <div class="grid grid-cols-3 w-3/4 mx-auto gap-8">
+        <div class="bg-yellow-400 p-8 rounded-lg">
+          <h4 class="text-4xl text-white mb-2">Deposit</h4>
+          <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+        </div>
+        <div class="bg-red-400 p-8 rounded-lg">
+          <h4 class="text-4xl text-white mb-2">Withdraw</h4>
+          <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-blue-400 p-8 rounded-lg">
+          <h4 class="text-4xl text-white mb-2">Balance</h4>
+          <h2 class="text-5xl">$<span id="balance-total">00</span></h2>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-12">
+      <div class="grid grid-cols-2 w-3/4 mx-auto gap-8">
+        <div class="bg-green-600 p-8 rounded-lg">
+          <h4 class="text-4xl text-white mb-2">Deposit</h4>
+          <input
+            type="text"
+            class="w-3/4 py-1 block px-3 mt-4"
+            placeholder="put how much $ you want to withdraw"
+            id="deposit_field"
+          />
+          <button
+            id="btn_deposit"
+            class="bg-black hover:bg-blue-400 text-white px-4 py-2 rounded mt-3"
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="bg-teal-400 p-8 rounded-lg">
+          <h4 class="text-4xl text-white mb-2">withdraw</h4>
+          <input
+            type="text"
+            class="w-3/4 py-1 block px-3 mt-4"
+            placeholder="put how much $ you want to withdraw"
+            id="withdraw-field"
+          />
+          <button
+            id="btn_withdraw"
+            class="bg-black hover:bg-blue-400 text-white px-4 py-2 rounded mt-3"
+          >
+            withdraw
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Js file Link -->
+    <script src="./utilities.js"></script>
+    <script src="./deposit-funtion.js"></script>
+    <script src="./withdraw-function.js"></script>
+  </body>
+</html>
